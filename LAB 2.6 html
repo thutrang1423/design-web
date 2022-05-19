@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <link rel="stylesheet" href="./font-icon/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Catty Board</title>
+</head>
+<body>
+    <div class="index">
+        <ul class="menu">
+            <li> <a href="#"><i class="ti-menu"></i></a></li>
+            <li> <a href="#"><i class="ti-home"></i></a></li>
+            <li> <a href="#"><i class="ti-search"></i></a></li>
+            <li> <a href="#"><i class="ti-volume"></i></a></li>
+            <li> <a href="#"><i class="ti-user"></i></a></li>
+            <li> <a href="#"><i class="ti-comment"></i></a></li>
+            <li> <a href="#"><i class="ti-settings"></i></a></li>
+            <li> <a href="#"><i class="ti-cloud"></i></a></li>
+        </ul>
+        <div class="main">
+            <div class="header">
+                    <img src="./img/cattyboard.jpg" alt="" class="logo">
+                <div class="title">
+                    <div class="subtitle">
+                        <h1>CattyBoard Top 100 Single Charts (11.06.36)</h1>
+                        <p>
+                            Unknown Artist <br>
+                            2021. Charts. 100 songs
+                        </p>
+                    </div>
+                    <div class="tools">
+                        <a href="#"><i class="ti-control-play"></i>Play all</a>
+                        <a href="#"><i class="ti-plus"></i>Add to</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contain">
+                <a href="#">
+                    <div class="row">
+                        <div class="column"><p>1. One Dance</p></div>
+                        <div class="column"><p>Crake feat CatKid & Cyla</p></div>
+                        <div class="column"><p>2:54</p></div>
+                        <div class="column"><button>CATTY CLOUD SYNC</button></div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="row nenXam">
+                        <div class="column"><p>2. Panda</p></div>
+                        <div class="column"><p>Cattee</p></div>
+                        <div class="column"><p>4:06</p></div>
+                        <div class="column"><button>CATTY CLOUD SYNC</button></div>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="row">
+                        <div class="column"><p>3. Can't Stop the Feeling!</p></div>
+                        <div class="column"><p>Catin Cimberlake</p></div>
+                        <div class="column"><p>3:56</p></div>
+                        <div class="column"><button>CATTY CLOUD SYNC</button></div>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="row nenXam">
+                        <div class="column"><p>4. Work From Home</p></div>
+                        <div class="column"><p>Cat Harmony feat Colla</p></div>
+                        <div class="column"><p>3:34</p></div>
+                        <div class="column"><button>CATTY CLOUD SYNC</button></div>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="row">
+                        <div class="column"><p>5. One Dance</p></div>
+                        <div class="column"><p>Crake feat CatKid & Cyla</p></div>
+                        <div class="column"><p>2:54</p></div>
+                        <div class="column"><button>CATTY CLOUD SYNC</button></div>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="row nenXam">
+                        <div class="column"><p>6. Panda</p></div>
+                        <div class="column"><p>Catte</p></div>
+                        <div class="column"><p>4:06</p></div>
+                        <div class="column"><button>CATTY CLOUD SYNC</button></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="operation">
+        <div class="suboperation">
+            <img src="./img/cattyboard.jpg" alt="" class="logo">
+            <div class="songAction">
+                <p class="song">If it Ain't Love</p>
+                <p class="singer">Catson Derulo</p>
+            </div>
+        </div>
+        <div class="tools">
+            <a href="#"><i class="ti-control-skip-backward"></i></a>
+            <a href="#"><i class="ti-control-pause"></i></a>
+            <a href="#"><i class="ti-control-skip-forward"></i></a>
+            <a href="#"><i class="ti-control-record"></i></a>
+            <a href="#"><i class="ti-control-shuffle"></i></a>
+        </div>
+    </div>
+</body>
+</html>
