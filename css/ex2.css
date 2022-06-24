@@ -1,0 +1,16 @@
+body {
+  background-image: url("https://th.bing.com/th/id/R.386296f83b90d8d5184eaee4059c0130?rik=Gwg5Mvk8FuTK7g&riu=http%3a%2f%2fimg0.etsystatic.com%2f000%2f0%2f5500659%2fil_340x270.252495300.jpg&ehk=VudRUbYhh96bQvzqAAYBzCpu%2ft%2fRwE77OZrWrhMDPxQ%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+}
+body #main {
+  background-color: rgba(204, 204, 204, 0.6784313725);
+  display: inline-block;
+  margin-left: 38%;
+  margin-top: 17%;
+}
+body #main h2, body #main h1 {
+  color: #fff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=ex2.css.map */

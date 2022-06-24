@@ -1,0 +1,15 @@
+body {
+  background-color: #dfd7d7;
+}
+body .title {
+  text-align: center;
+}
+body nav ul {
+  background-color: #fff;
+  display: flex;
+  align-content: space-around;
+}
+body nav ul li {
+  display: inline-block;
+  list-style: none;
+}

@@ -1,0 +1,55 @@
+#main {
+  width: 1068px;
+  background-image: url(https://images.pexels.com/photos/3680903/pexels-photo-3680903.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+}
+#main i {
+  color: white;
+}
+#main h1,
+#main p {
+  color: #fff;
+}
+#main #contact .icon {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+#main #contact .icon i {
+  font-size: 23px;
+}
+#main #contact .content .title h1,
+#main #contact .content .title p {
+  text-align: center;
+}
+#main #contact .content .detail {
+  display: flex;
+  justify-content: space-around;
+}
+#main #contact .content .detail .infor .detailInfor .icon {
+  display: inline-block;
+}
+#main #contact .content .detail .infor .detailInfor p {
+  display: inline-block;
+}
+#main #contact .content .detail .input {
+  background-color: #fff;
+  width: 366px;
+  padding: 30px;
+  margin: 15px;
+}
+#main #contact .content .detail .input h2 {
+  text-align: center;
+}
+#main #contact .content .detail .input input {
+  display: block;
+  width: 328px;
+  line-height: 2;
+  margin: 15px;
+}
+#main #contact .content .detail .input button {
+  display: block;
+  font-size: 24px;
+  background-color: #8b0f0f;
+  color: #fff;
+  margin: 15px;
+}
