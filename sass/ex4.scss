@@ -1,0 +1,70 @@
+$white:#fff;
+$text-size: 1.4rem;
+$primary-pink:rgb(238, 39, 155);
+$border-radius: 5px;
+$width-main: 537px;
+
+body{
+    background: linear-gradient(to bottom, $primary-pink, blue);
+    #main{
+        display: inline-block;
+        text-align: center;
+        background-color: $white;
+        padding: 60px;
+        border-radius: $border-radius;
+        margin-left:calc( 50% - $width-main/2);
+        h1.title{
+            font-size: 2rem;
+        }
+        .email, .password{
+           line-height: 1.6rem;
+           padding: 3px 0;
+           margin: 8px 0;
+           width: 330px;
+        }
+        .remember {
+            padding: 16px;
+            input{
+            }
+            p{
+                font-size: $text-size;
+                display: inline-block;
+            }
+        }
+        .btnLogin{
+            width: 100%;
+            padding: 16px;
+            font-size: $text-size;
+            color: $white;
+            background-color: $primary-pink;
+            border: none;
+            border-radius: $border-radius;
+        }
+        .orLogin{
+            p{
+                opacity: 0.8;
+                font-weight: 300;
+                font-size:$text-size ;
+            }
+        }
+        .social{
+            .btnSocial{
+                margin: 16px 20px;
+                padding: 12px 41px;
+                .btnSocial{
+                    padding: 8px;
+                }
+                img{
+                    width:26px;
+                };
+                a{
+                    text-decoration: none;
+                    line-height: 1.4px;
+                    p{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

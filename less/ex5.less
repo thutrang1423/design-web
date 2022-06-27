@@ -1,0 +1,72 @@
+@colorIcon: white;
+@colorText: #fff;
+@bg-input: #fff;
+@colorButton: rgb(139, 15, 15);
+@widthMain: 1068px;
+
+#main{
+    width: @widthMain;
+    background-image: url(https://images.pexels.com/photos/3680903/pexels-photo-3680903.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    i{
+        color: @colorIcon;
+    }
+
+    h1, p{
+        color: @colorText;
+    }
+    #contact{
+        .icon{
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            i{
+                font-size: 23px;
+            }
+        }    
+        .content{
+            .title{
+                h1, p{
+                    text-align: center;
+                }
+            }
+            .detail{
+                display: flex;
+                justify-content: space-around;
+
+                .infor{
+                    .detailInfor{
+                        .icon{
+                            display: inline-block;
+                        }
+                        p{
+                            display: inline-block;
+                        }
+                    }
+                }
+                .input{
+                    background-color: @bg-input;
+                    width: 366px;
+                    padding: 30px;
+                    margin: 15px;
+                    h2{
+                        text-align: center;
+                    }
+                    input{
+                        display: block;
+                        width: 328px;
+                        line-height: 2;
+                        margin: 15px;
+                    }
+                    button{
+                        display: block;
+                        font-size: 24px;
+                        background-color: @colorButton;
+                        color: @colorText;
+                        margin: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+  

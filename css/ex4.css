@@ -1,0 +1,60 @@
+body {
+  background: linear-gradient(to bottom, rgb(238, 39, 155), blue);
+}
+body #main {
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 5px;
+  margin-left: calc(50% - 268.5px);
+}
+body #main h1.title {
+  font-size: 2rem;
+}
+body #main .email, body #main .password {
+  line-height: 1.6rem;
+  padding: 3px 0;
+  margin: 8px 0;
+  width: 330px;
+}
+body #main .remember {
+  padding: 16px;
+}
+body #main .remember p {
+  font-size: 1.4rem;
+  display: inline-block;
+}
+body #main .btnLogin {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: rgb(238, 39, 155);
+  border: none;
+  border-radius: 5px;
+}
+body #main .orLogin p {
+  opacity: 0.8;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+body #main .social .btnSocial {
+  margin: 16px 20px;
+  padding: 12px 41px;
+}
+body #main .social .btnSocial .btnSocial {
+  padding: 8px;
+}
+body #main .social .btnSocial img {
+  width: 26px;
+}
+body #main .social .btnSocial a {
+  text-decoration: none;
+  line-height: 1.4px;
+}
+body #main .social .btnSocial a p {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=ex4.css.map */
