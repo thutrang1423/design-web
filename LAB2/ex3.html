@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+</head>
+<body>
+
+    <style>
+        .row{
+            display:flex;
+            justify-content: space-around;
+        }
+        input{
+            width: 300px;
+            font-size: 1.4rem;
+        }
+        span{
+            margin: 8px 0;
+        }
+        p{
+            margin: 0;
+            color: rgb(59, 58, 58);
+        }
+    </style>
+
+    <div id="main">
+        <div class=" row open-close">
+            <span>
+                <p>Mở bán từ</p>
+                <input type="datetime-local" >
+            </span>
+            <span>
+                <p>Ngày ngừng bán</p>
+                <input type="datetime-local">
+            </span>
+        </div>
+        <div class="row code_time-ticket">
+            <span>
+                <p>Số vé phát hành</p>
+                <input type="text">
+            </span>
+            <span>
+                <p>Ngày phát hành</p>
+                <input type="date">
+            </span>
+        </div>
+        <div class="row cost-donVi">
+            <span>
+                <p>Giá vé</p>
+                <input type="text">
+            </span>
+            <span>
+                <p>Đơn vị</p>
+                <input type="text">
+            </span>
+        </div>
+    </div>
+
+    <textarea id="editor1" name="ex3" cols="80" rows="10">
+        <p>- Vé đứng <br>
+        - Khu vực gần sân khấu nhất <br>
+        - Giá vé đã bao gồm bảo hiểm tai nạn</p>
+     </textarea>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        CKEDITOR.replace("ex3")
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- cách load đọc từng phần dữ liệu  -->
+<body>
+    <div class="news-list">
+        <article class="news-item">
+          <img src="#" width="350" height="250" alt="hình ảnh nè" /><br />
+          <span class="cate" style="color: red">Danh mục bài viết</span>
+          <h2>Tiêu đề bài viết</h2>
+          <span class="created-date">ngày tháng năm tạo bài viết</span>
+          <p>Mô tả nè</p>
+          <button>Tiếp tục đọc</button>
+        </article>
+      </div>
+
+      <script src="./js/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $.get(
+            `https://62a16487cd2e8da9b0f05428.mockapi.io/news`,
+            function (data, status) {
+
+              let news="";
+
+              let result = JSON.stringify(data);
+              console.log(data.length);
+  
+              for (let i = 0; i < data.length; i++) {
+                news +=`
+                <article class="news-item">
+                  <img src="${data[i].image}" width="350" height="250" alt="hình ảnh nè" /><br />
+                  <span class="cate" style="color: red">${data[i].cate}</span>
+                  <h2>${data[i].title}</h2>
+                  <span class="created-date">${new Date(data[i].date_create).toLocaleString()}</span>
+                  <p>${data[i].description}</p>
+                  <button>Tiếp tục đọc</button>
+                </article>
+                `
+              }
+              $(".news-list").html(news);
+            }
+          );
+        });
+      </script>
+</body> 
+</html>
