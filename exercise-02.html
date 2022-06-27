@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <label for="">your number: </label>
+    <input type="text" id="upsetInput" placeholder="please! enter a number > 10">
+    <button id="btnCheck">Check reversible number</button>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        function IsReveriable (numN){
+            let curentNumN = numN
+            let reveriableNum = 0
+
+            while (curentNumN > 0){
+                reveriableNum = reveriableNum*10 + (curentNumN%10)
+                curentNumN = Math.floor(curentNumN/10);
+            }
+
+            // if(reveriableNum==numN){
+            //     return true
+            // }
+            // else{
+            //     return false
+            // }
+
+            return(reveriableNum == numN) ? true : false
+        }
+        $(document).ready(function(){
+            $("#btnCheck").click(function(){
+                let  numN = Number($("#upsetInput").val())
+                if(numN < 10){
+                        alert("Please! enter number agein")
+                }
+
+                // else{
+                //     if(IsReveriable(numN)){
+                //         alert("$(numN) " + "is reveriable number")
+                //     }
+                //     else{
+                //         alert("$(numN) " + "is Not umNreveriable number")
+                //     }
+                // }
+
+                else{
+                    return(IsReveriable(numN)) ? 
+                    alert("$(numN) " + "is reveriable number") :
+                    alert("$(numN) " + "is Not umNreveriable number")
+                }
+            })
+        })
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+    <label for="">Number A:</label>
+    <input type="text" id="numA" value="0"><br>
+    <label for="">Number B:</label>
+    <input type="text" id="numB" value="0"><br>
+    
+    <div>Max: <span id="result"></span></div>
+    
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // on tự động bắt sự kiện thay đổi
+            // change chick chuột ra bên ngoài thì mới bắt sự kiện thay đổi
+            $("input").on ("input",function(){
+                let numA = Number ($("#numA").val())
+                let numB = Number ($("#numB").val())
+                let result = numA > numB ? numA : numB;
+                $("#result").text(result);
+            })
+        })
+    </script>
+</body> 
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="stopwatch">
+        <span>00 : 00 : 00</span>
+    </p>
+    <button id="startBtn">Start</button>
+    <button id="countinueBtn" hidden>Countinue</button>
+    <button id="stopBtn1">Pause</button>
+    <button id="stopBtn2" hidden>Pause</button>
+    <button id="resetBtn">Reset</button>
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let hr = 0;
+            let min = 0;
+            let sec = 0;
+
+            var time;
+
+            function timer(){
+                sec++;
+
+                if(sec===60){
+                    min++;
+                    sec = 0
+                }
+
+                if(min===60){
+                    hr++;
+                    min = 0;
+                }
+
+                if(hr===24){
+                    hr, min, sec = 0;
+                }
+
+                let seconds = sec < 10 ? '0' + sec : sec;
+                let minute = min < 10 ? '0' + min : min;
+                let hour = hr < 10 ? '0' + hr : hr;
+
+                let timer = `${hour} : ${minute} : ${seconds}`;
+
+                $("span").text(timer);
+            }
+
+            $("#startBtn").on("click",function(){
+                time = setInterval(timer,1000);
+                $("#startBtn").hide();
+                $("#stopBtn1").hide();
+                $("#stopBtn2").show();
+            })
+
+            $("#countinueBtn").click(function(){
+                time = setInterval(timer,1000);
+                $("#countinueBtn").hide();
+            })
+
+            $("#stopBtn2").on("click",function(){
+                clearInterval(time,0);
+                $("#countinueBtn").show();
+            })
+
+            $("#resetBtn").on("click",function(){
+                hr = 0;
+                min = 0;
+                sec = 0;
+
+                $("span").text("00 : 00 : 00");
+                $("#startBtn").show();
+                $("#countinueBtn").hide();
+                $("#stopBtn2").hide();
+                $("#stopBtn1").show();
+            })
+        })
+    </script>
+</body>
+</html>
